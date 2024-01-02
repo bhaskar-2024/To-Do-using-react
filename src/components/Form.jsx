@@ -2,7 +2,7 @@ import React from 'react'
 import {useDispatch} from 'react-redux'
 import {addTodo} from '../shop/todoSlice'
 import {useState} from 'react'
-function Form() {
+function Form({buttonName}) {
   
   const[input , setInput] = useState("");
   const dispatch = useDispatch();
@@ -29,7 +29,7 @@ function Form() {
          <button type='submit'
          className='lg:bg-blue-600 lg:w-2/12 lg:text-white lg:font-bold lg:text-2xl lg:border-l-none lg:rounded-l-none lg:hover:bg-blue-700
           lg:border-blue-950 lg:rounded  font-mono '
-         >Add Todo</button>
+         >{buttonName}</button>
     </form>
     </>
   )

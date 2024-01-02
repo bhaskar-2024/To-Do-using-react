@@ -9,7 +9,7 @@ function TodoConatiner() {
   return (
     <div className="w-2/3 m-auto my-28 border-2 rounded-md px-5 py-5 bg-gray-700">
        <Header/>
-    <Form/>
+    <Form buttonName = "Add To-Do"/>
       <ul>  
         {todos.map((todo) => {
           return (
